@@ -1,8 +1,18 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app"
+import { ReactElement } from "react"
+import { ThemeProvider } from "styled-components"
+import GlobalStyle from "../styles/GlobalStyle"
+import { theme } from "../styles/theme"
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
+	return (
+		<>
+			<GlobalStyle />
+			<ThemeProvider theme={theme}>
+				<Component {...pageProps} />
+			</ThemeProvider>
+		</>
+	)
 }
 
 export default MyApp
