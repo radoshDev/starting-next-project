@@ -9,7 +9,6 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@types/styled-components": "latest",
 		"next": "latest",
 		"react": "latest",
 		"react-dom": "latest",
@@ -18,6 +17,7 @@
 	"devDependencies": {
 		"@types/node": "latest",
 		"@types/react": "latest",
+		"@types/styled-components": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
 		"babel-plugin-styled-components": "latest",
